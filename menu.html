@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu - A-S 345</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Menu</h1>
+</header>
+
+  <nav>
+    <ul id="topnav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+<h2>Our Menu</h2>
+
+
+<button class="accordion">Appetizers</button>
+  <div class="panel">
+    <div class="media">
+    <div class="media-left">
+      <img src="images/sticks.jpg" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Mozzarella Sticks</h4>
+      <p>Fried Cheese in the form of a stick</p>
+    </div>
+  </div>
+
+  <div class="media">
+  <div class="media-left">
+    <img src="images/skins.jpg" class="media-object" style="width:60px">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Potato Skins</h4>
+    <p>The skin of a potato with cheese</p>
+  </div>
+</div>
+  </div>
+
+
+
+  <button class="accordion">Salads</button>
+    <div class="panel">
+      <div class="media">
+      <div class="media-left">
+        <img src="images/sal.jpg" class="media-object" style="width:60px">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">House Salad</h4>
+        <p>A good salad</p>
+      </div>
+    </div>
+
+    <div class="media">
+    <div class="media-left">
+      <img src="images/cea.jpg" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Ceasar Salad</h4>
+      <p>A decent salad</p>
+    </div>
+  </div>
+  </div>
+
+
+
+    <button class="accordion">Entrees</button>
+      <div class="panel">
+        <div class="media">
+        <div class="media-left">
+          <img src="images/shrimp.jpg" class="media-object" style="width:60px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Shrimp Scampi</h4>
+          <p>Shrimp and Scampi together as one</p>
+        </div>
+      </div>
+
+      <div class="media">
+      <div class="media-left">
+        <img src="images/chick.jpg" class="media-object" style="width:60px">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Chicken Paremsian</h4>
+        <p>Chicken with Marinera and Parmesian</p>
+      </div>
+    </div>
+    </div>
+
+
+
+      <button class="accordion">Sandwiches</button>
+        <div class="panel">
+          <div class="media">
+          <div class="media-left">
+            <img src="images/turk.jpg" class="media-object" style="width:60px">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Turkey Club</h4>
+            <p>A sandwich with Turkey</p>
+          </div>
+        </div>
+        <div class="media">
+        <div class="media-left">
+          <img src="images/cheese.jpg" class="media-object" style="width:60px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Cheeseburger</h4>
+          <p>It's a hamburger with cheese</p>
+        </div>
+      </div>
+    </div>
+
+
+
+        <button class="accordion">Desserts</button>
+          <div class="panel">
+            <div class="media">
+            <div class="media-left">
+              <img src="images/car.jpg" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Carrot Cake</h4>
+              <p>An alright dessert</p>
+            </div>
+          </div>
+          <div class="media">
+          <div class="media-left">
+            <img src="images/ice.jpg" class="media-object" style="width:60px">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Ice Cream</h4>
+            <p>The best dessert</p>
+          </div>
+        </div>
+      </div>
+  <!--<nav>
+    <ul id="toc">
+      <li><a href="#appetizers">Appetizers</a></li>
+      <li><a href="#salads">Salads</a></li>
+      <li><a href="#entrees">Entrees</a></li>
+      <li><a href="#sandwiches">Sandwiches</a></li>
+      <li><a href="#deserts">Desserts</a></li>
+    </ul>
+  </nav>
+-->
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<footer>
+  <h2 style="color: lightgrey;">Schedule a Reservation</h2>
+  <button class="button3"><h4>Make Reservations</h4></button>
+</footer>
+
+
+</body>
+</html>
